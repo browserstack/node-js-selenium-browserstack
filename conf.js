@@ -10,8 +10,9 @@ exports.singleTestCapabilities = {
   'realMobile': 'true',
   'os_version': '14.0',
   'browserName': 'iPhone',
-  'name': 'BStack-[NodeJS] Sample Test', // test name
+  'name': 'BStack single node-js', // test name
   'build': 'browserstack-build-1', // CI/CD job or build name
+  'browserstack.source': 'node-js:sample-selenium-3-v1.0',
   ...userCredentials
 }
 
@@ -21,8 +22,9 @@ exports.localTestCapabilities = {
   'os_version': '14.0',
   'browserName': 'iPhone',
   'browserstack.local': 'true',
-  'name': 'BStack-[NodeJS] Sample Test', // test name
+  'name': 'BStack local node-js', // test name
   'build': 'browserstack-build-1', // CI/CD job or build name
+  'browserstack.source': 'node-js:sample-selenium-3-v1.0',
   ...userCredentials
 }
 
@@ -33,7 +35,8 @@ exports.parallelTestCapabilities = [
     'browser_version': 'latest',
     'os': 'Windows',
     'build': 'browserstack-build-1',
-    'name': 'Parallel test 1',
+    'name': 'BStack parallel node-js 1',
+    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -42,7 +45,8 @@ exports.parallelTestCapabilities = [
     'browser_version': 'latest',
     'os': 'OS X',
     'build': 'browserstack-build-1',
-    'name': 'Parallel test 2',
+    'name': 'BStack parallel node-js 2',
+    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -50,7 +54,8 @@ exports.parallelTestCapabilities = [
     'browserName': 'Safari',
     'os': 'OS X',
     'build': 'browserstack-build-1',
-    'name': 'Parallel test 3',
+    'name': 'BStack parallel node-js 3',
+    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -58,7 +63,8 @@ exports.parallelTestCapabilities = [
     'device': 'Samsung Galaxy S20',
     'realMobile': 'true',
     'build': 'browserstack-build-1',
-    'name': 'Parallel test 4',
+    'name': 'BStack parallel node-js 4',
+    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -66,7 +72,8 @@ exports.parallelTestCapabilities = [
     'device': 'iPhone 12 Pro Max',
     'realMobile': 'true',
     'build': 'browserstack-build-1',
-    'name': 'Parallel test 5',
+    'name': 'BStack parallel node-js 5',
+    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   }
 ];
