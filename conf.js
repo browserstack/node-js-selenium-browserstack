@@ -10,9 +10,10 @@ exports.singleTestCapabilities = {
     "os": "OS X",
     "osVersion": "Sierra",
     "buildName": "browserstack-build-1",
-    "sessionName": "Selenium-4 Nodejs snippet test",
+    "sessionName": "Bstack single node-js",
     "local": "false",
     "seleniumVersion": "4.0.0",
+    "source": "node-js:sample-master-v1.0",
     ...userCredentials,
   },
   "browserName": "Chrome",
@@ -24,9 +25,10 @@ exports.localTestCapabilities = {
     "os": "OS X",
     "osVersion": "Sierra",
     "buildName": "browserstack-build-1",
-    "sessionName": "Selenium-4 Nodejs snippet test",
+    "sessionName": "Bstack local node-js",
     "local": "true",
     "seleniumVersion": "4.0.0",
+    "source": "node-js:sample-master-v1.0",
     ...userCredentials
   },
   "browserName": "Chrome",
@@ -37,6 +39,8 @@ const parallelTestBaseCapability = {
   "buildName": "browserstack-build-1",
   "local": "false",
   "seleniumVersion": "4.0.0",
+  "sessionName": "Bstack parallel node-js",
+  "source": "node-js:sample-master-v1.0",
   ...userCredentials
 };
 
