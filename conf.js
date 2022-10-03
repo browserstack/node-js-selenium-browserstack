@@ -13,7 +13,6 @@ exports.singleTestCapabilities = {
     "sessionName": "BStack single node-js",
     "local": "false",
     "seleniumVersion": "4.0.0",
-    "source": "node-js:sample-master-v1.0",
     ...userCredentials,
   },
   "browserName": "Chrome",
@@ -28,7 +27,6 @@ exports.localTestCapabilities = {
     "sessionName": "BStack local node-js",
     "local": "true",
     "seleniumVersion": "4.0.0",
-    "source": "node-js:sample-master-v1.0",
     ...userCredentials
   },
   "browserName": "Chrome",
@@ -39,7 +37,6 @@ const parallelTestBaseCapability = {
   "buildName": "browserstack-build-1",
   "local": "false",
   "seleniumVersion": "4.0.0",
-  "source": "node-js:sample-master-v1.0",
   ...userCredentials
 };
 
