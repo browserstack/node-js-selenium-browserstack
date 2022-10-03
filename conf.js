@@ -12,7 +12,6 @@ exports.singleTestCapabilities = {
   'browserName': 'iPhone',
   'name': 'BStack single node-js', // test name
   'build': 'browserstack-build-1', // CI/CD job or build name
-  'browserstack.source': 'node-js:sample-selenium-3-v1.0',
   ...userCredentials
 }
 
@@ -24,7 +23,6 @@ exports.localTestCapabilities = {
   'browserstack.local': 'true',
   'name': 'BStack local node-js', // test name
   'build': 'browserstack-build-1', // CI/CD job or build name
-  'browserstack.source': 'node-js:sample-selenium-3-v1.0',
   ...userCredentials
 }
 
@@ -36,7 +34,6 @@ exports.parallelTestCapabilities = [
     'os': 'Windows',
     'build': 'browserstack-build-1',
     'name': 'BStack parallel node-js 1',
-    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -46,7 +43,6 @@ exports.parallelTestCapabilities = [
     'os': 'OS X',
     'build': 'browserstack-build-1',
     'name': 'BStack parallel node-js 2',
-    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -55,7 +51,6 @@ exports.parallelTestCapabilities = [
     'os': 'OS X',
     'build': 'browserstack-build-1',
     'name': 'BStack parallel node-js 3',
-    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -64,7 +59,6 @@ exports.parallelTestCapabilities = [
     'realMobile': 'true',
     'build': 'browserstack-build-1',
     'name': 'BStack parallel node-js 4',
-    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   },
   {
@@ -73,7 +67,6 @@ exports.parallelTestCapabilities = [
     'realMobile': 'true',
     'build': 'browserstack-build-1',
     'name': 'BStack parallel node-js 5',
-    'browserstack.source': 'node-js:sample-selenium-3-v1.0',
     ...userCredentials
   }
 ];
