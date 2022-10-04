@@ -5,7 +5,7 @@ const browserstack = require('browserstack-local');
 
 // Input capabilities
 const { localTestCapabilities, hubURL } = require('../conf');
-localTestCapabilities['bstack:options'].source = "node-js:sample-master:v1.0";
+localTestCapabilities['bstack:options'].source = "node-js:sample-main:v1.0";
 
 //creates an instance of Local
 const bs_local = new browserstack.Local();
