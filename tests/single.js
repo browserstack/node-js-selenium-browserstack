@@ -3,7 +3,7 @@ const { By } = require('selenium-webdriver');
 const assert = require('assert');
 // Input capabilities
 var { singleTestCapabilities, hubURL } = require('../conf');
-singleTestCapabilities['bstack:options'].source = "node-js:sample-master:v1.0";
+singleTestCapabilities['bstack:options'].source = "node-js:sample-main:v1.0";
 
 async function runTestWithCaps(capabilities) {
   let driver = new webdriver.Builder()
