@@ -10,7 +10,7 @@ exports.singleTestCapabilities = {
     "os": "OS X",
     "osVersion": "Sierra",
     "buildName": "browserstack-build-1",
-    "sessionName": "Selenium-4 Nodejs snippet test",
+    "sessionName": "BStack single node-js",
     "local": "false",
     "seleniumVersion": "4.0.0",
     ...userCredentials,
@@ -24,7 +24,7 @@ exports.localTestCapabilities = {
     "os": "OS X",
     "osVersion": "Sierra",
     "buildName": "browserstack-build-1",
-    "sessionName": "Selenium-4 Nodejs snippet test",
+    "sessionName": "BStack local node-js",
     "local": "true",
     "seleniumVersion": "4.0.0",
     ...userCredentials
@@ -45,7 +45,7 @@ exports.parallelTestCapabilities = [
     'bstack:options': {
       "os": "OS X",
       "osVersion": "Sierra",
-      "sessionName": "Selenium-4 Nodejs snippet test",
+      "sessionName": "BStack parallel node-js 1",
       ...parallelTestBaseCapability
     },
     "browserName": "Chrome",
@@ -55,7 +55,7 @@ exports.parallelTestCapabilities = [
     'bstack:options': {
       "os": "OS X",
       "osVersion": "Sierra",
-      "sessionName": "Selenium-4 Nodejs snippet test",
+      "sessionName": "BStack parallel node-js 2",
       ...parallelTestBaseCapability
     },
     "browserName": "Safari",
@@ -65,7 +65,7 @@ exports.parallelTestCapabilities = [
     'bstack:options': {
       "os": "windows",
       "osVersion": "11",
-      "sessionName": "Selenium-4 Nodejs snippet test",
+      "sessionName": "BStack parallel node-js 3",
       ...parallelTestBaseCapability
     },
     "browserName": "Chrome",

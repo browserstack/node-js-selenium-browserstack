@@ -4,6 +4,10 @@ const assert = require('assert');
 // Input capabilities
 var { parallelTestCapabilities, hubURL } = require('../conf')
 
+for(caps in parallelTestCapabilities){
+  parallelTestCapabilities[caps]['bstack:options'].source = "node-js:sample-main:v1.0";
+}
+
 async function runTestWithCaps(capabilities) {
   let driver = new webdriver.Builder()
     .usingServer(hubURL)
