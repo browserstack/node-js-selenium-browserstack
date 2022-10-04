@@ -5,7 +5,7 @@ const browserstack = require('browserstack-local');
 
 // Input capabilities
 const { localTestCapabilities, hubURL } = require('../conf');
-
+localTestCapabilities['browserstack.source'] = 'node-js:sample-selenium-3:v1.0';
 //creates an instance of Local
 const bs_local = new browserstack.Local();
 
