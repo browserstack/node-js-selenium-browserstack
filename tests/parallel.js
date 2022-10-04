@@ -5,7 +5,7 @@ const assert = require('assert');
 var { parallelTestCapabilities, hubURL } = require('../conf')
 
 for(caps in parallelTestCapabilities){
-  parallelTestCapabilities[caps]['bstack:options'].source = "node-js:sample-master:v1.0";
+  parallelTestCapabilities[caps]['bstack:options'].source = "node-js:sample-main:v1.0";
 }
 
 async function runTestWithCaps(capabilities) {
