@@ -1,6 +1,7 @@
 const webdriver = require('selenium-webdriver');
 const { By } = require('selenium-webdriver');
 const assert = require('assert');
+const https = require("https");
 // Input capabilities
 var { singleTestCapabilities, hubURL } = require('../conf');
 singleTestCapabilities['bstack:options'].source = "node-js:sample-main:v1.0";
@@ -9,6 +10,12 @@ async function runTestWithCaps(capabilities) {
   let driver = new webdriver.Builder()
     .usingServer(hubURL)
     .withCapabilities(capabilities)
+    .usingHttpAgent(
+      new https.Agent({
+        keepAlive: true,
+        keepAliveMsecs: 1000000,
+      })
+    )
     .build();
 
   try {
