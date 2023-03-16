@@ -2,6 +2,7 @@ const webdriver = require('selenium-webdriver');
 const { By } = require('selenium-webdriver');
 const assert = require('assert');
 const browserstack = require('browserstack-local');
+const https = require("https");
 
 // Input capabilities
 const { localTestCapabilities, hubURL } = require('../conf');
@@ -21,6 +22,12 @@ async function runTestWithCaps () {
   let driver = new webdriver.Builder()
     .usingServer(hubURL)
     .withCapabilities(localTestCapabilities)
+    .usingHttpAgent(
+      new https.Agent({
+        keepAlive: true,
+        keepAliveMsecs: 1000000,
+      })
+    )
     .build();
 
   try{
