@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "single": "node ./tests/single.js --timeout=120000",
-    "parallel": "node ./tests/parallel.js --timeout=120000",
-    "local": "node ./tests/local.js --timeout=120000"
+    "single": "node ./tests/single.js",
+    "parallel": "node ./tests/parallel.js",
+    "local": "node ./tests/local.js"
   },
   "dependencies": {
     "browserstack-local": "^1.4.9",
