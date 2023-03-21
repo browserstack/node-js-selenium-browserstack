@@ -11,7 +11,7 @@ for(caps in parallelTestCapabilities){
 }
 
 async function runTestWithCaps(capabilities) {
-  let driver = new webdriver.Builder()
+  let driver = await new webdriver.Builder()
     .usingServer(hubURL)
     .withCapabilities(capabilities)
     .usingHttpAgent(
