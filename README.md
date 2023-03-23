@@ -23,9 +23,9 @@ Configure the capabilities and swap your credentials. <br/>
 Run the test and see the session on the browserstack dashboard. <br/>
 Follow step-2 then,
 
-To run a single test session:
+To run a test session:
 ``` 
-npm run single
+npm run parallel
 ```
 ---
 To run a local test session:
@@ -37,9 +37,4 @@ var bs_local_args = { 'key': ACCESS_KEY };
 
 ``` 
 npm run local
-```
----
-To run a parallel test session:
-``` 
-npm run parallel
 ```
