@@ -20,7 +20,7 @@ bs_local.start(bs_local_args, function () {
 });
 
 async function runTestWithCaps() {
-  let driver = new webdriver.Builder()
+  let driver = await new webdriver.Builder()
     .usingServer(hubURL)
     .withCapabilities(localTestCapabilities)
     .usingHttpAgent(

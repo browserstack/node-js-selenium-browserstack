@@ -7,7 +7,7 @@ var { singleTestCapabilities, hubURL } = require('../conf');
 singleTestCapabilities['bstack:options'].source = "node-js:sample-main:v1.0";
 
 async function runTestWithCaps(capabilities) {
-  let driver = new webdriver.Builder()
+  let driver = await new webdriver.Builder()
     .usingServer(hubURL)
     .withCapabilities(capabilities)
     .usingHttpAgent(
