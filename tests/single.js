@@ -4,7 +4,7 @@ const assert = require('assert');
 const https = require("https");
 // Input capabilities
 var { singleTestCapabilities, hubURL } = require('../conf');
-singleTestCapabilities['bstack:options'].source = "node-js:sample-main:v1.0";
+singleTestCapabilities['bstack:options'].source = "node-js:sample-main:v1.1";
 
 async function runTestWithCaps(capabilities) {
   let driver = await new webdriver.Builder()
