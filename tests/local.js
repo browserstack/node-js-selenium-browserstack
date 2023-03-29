@@ -6,7 +6,7 @@ const https = require("https");
 
 // Input capabilities
 const { localTestCapabilities, hubURL } = require('../conf');
-localTestCapabilities['browserstack.source'] = 'node-js:sample-selenium-3:v1.0';
+localTestCapabilities['browserstack.source'] = 'node-js:sample-selenium-3:v1.1';
 //creates an instance of Local
 const bs_local = new browserstack.Local();
 

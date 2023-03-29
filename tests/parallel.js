@@ -7,7 +7,7 @@ const https = require("https");
 var { parallelTestCapabilities, hubURL } = require('../conf')
 
 for(caps in parallelTestCapabilities){
-  parallelTestCapabilities[caps]['browserstack.source'] = 'node-js:sample-selenium-3:v1.0';
+  parallelTestCapabilities[caps]['browserstack.source'] = 'node-js:sample-selenium-3:v1.1';
 }
 
 async function runTestWithCaps(capabilities) {
