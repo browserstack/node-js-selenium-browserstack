@@ -5,7 +5,7 @@ const https = require("https");
 
 // Input capabilities
 var { singleTestCapabilities, hubURL } = require('../conf');
-singleTestCapabilities['browserstack.source'] = 'node-js:sample-selenium-3:v1.0';
+singleTestCapabilities['browserstack.source'] = 'node-js:sample-selenium-3:v1.1';
 async function runTestWithCaps(capabilities) {
   let driver = await new webdriver.Builder()
     .usingServer(hubURL)
