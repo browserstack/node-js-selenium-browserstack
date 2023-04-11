@@ -1,4 +1,4 @@
-# This job is to test different npm profiles in master branch against Pull Request raised
+# This job is to test different npm profiles in main branch against Pull Request raised
 # This workflow targets node-js-selenium
 
 name: NodeJS-selenium Test workflow for Node from workflow_dispatch
